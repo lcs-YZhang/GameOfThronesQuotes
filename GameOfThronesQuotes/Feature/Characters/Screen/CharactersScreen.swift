@@ -9,24 +9,23 @@ import SwiftUI
 
 struct CharactersScreen: View {
 
-    @StateObject private var vm = CharactersViewModelImpl(
-        service: CharacterServiceImpl()
-    )
+    @StateObject private var vm = CharactersViewModelImpl(service: CharacterServiceImpl())
 
     var body: some View {
-        VStack(alignment: .center) {
+        
+        Group {
             if vm.quote.isEmpty {
-                ProgressView()
+                Loading(text: "Fetching Quote")
             } else {
-                // Show the last XKCDComic instance in the list from the view model
-                CharacterView(item: vm.quote.last!)
+                List {
+                    ForEach(vm.quote, id: \.sentence) { item in
+                        CharacterView(item: item)
+                    }
+                }
             }
         }
-        .padding()
         .task {
-            // Wait for the currentComic to be retrieved from the API
             await vm.getCharacters()
-            
         }
     }
 }

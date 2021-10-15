@@ -8,9 +8,7 @@
 import Foundation
 
 protocol CharacterViewModel: ObservableObject {
-
     func getCharacters() async
-    
 }
 
 @MainActor
@@ -27,7 +25,7 @@ final class CharactersViewModelImpl: CharacterViewModel, ObservableObject {
     func getCharacters() async {
         do {
             let newQuote = try await service.fetchCharacters()
-            
+            objectWillChange.send()
             quote.append(newQuote)
         } catch {
             print(error)

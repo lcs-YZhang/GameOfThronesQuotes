@@ -45,9 +45,7 @@ struct CharacterView: View {
             string[range].font = .system(size: 18)
             string[range].foregroundColor = .primary
         }
-
         return string
-
     }
 }
 
