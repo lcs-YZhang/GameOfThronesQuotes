@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB7042DC271395130073A62E /* GameOfThronesQuotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7042DB271395130073A62E /* GameOfThronesQuotesApp.swift */; };
-		FB7042DE271395130073A62E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7042DD271395130073A62E /* ContentView.swift */; };
 		FB7042E02713951E0073A62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7042DF2713951E0073A62E /* Assets.xcassets */; };
 		FB7042E32713951E0073A62E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7042E22713951E0073A62E /* Preview Assets.xcassets */; };
 		FB7042ED2714E6880073A62E /* APIConestants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7042EC2714E6880073A62E /* APIConestants.swift */; };
@@ -18,12 +16,11 @@
 		FB7042FD271727590073A62E /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7042FC271727590073A62E /* CharacterView.swift */; };
 		FB7042FF2717276C0073A62E /* CharactersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7042FE2717276C0073A62E /* CharactersScreen.swift */; };
 		FB704305271727F20073A62E /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB704304271727F20073A62E /* Loading.swift */; };
+		FB704307271862DF0073A62E /* GameOfThronesQuotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB704306271862DF0073A62E /* GameOfThronesQuotesApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB7042D8271395120073A62E /* GameOfThronesQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfThronesQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB7042DB271395130073A62E /* GameOfThronesQuotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThronesQuotesApp.swift; sourceTree = "<group>"; };
-		FB7042DD271395130073A62E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB7042DF2713951E0073A62E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB7042E22713951E0073A62E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB7042EC2714E6880073A62E /* APIConestants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConestants.swift; sourceTree = "<group>"; };
@@ -33,6 +30,7 @@
 		FB7042FC271727590073A62E /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		FB7042FE2717276C0073A62E /* CharactersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreen.swift; sourceTree = "<group>"; };
 		FB704304271727F20073A62E /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		FB704306271862DF0073A62E /* GameOfThronesQuotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThronesQuotesApp.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +65,7 @@
 			children = (
 				FB704301271727B80073A62E /* Base */,
 				FB7043002717279C0073A62E /* Feature */,
-				FB7042DB271395130073A62E /* GameOfThronesQuotesApp.swift */,
-				FB7042DD271395130073A62E /* ContentView.swift */,
+				FB704306271862DF0073A62E /* GameOfThronesQuotesApp.swift */,
 				FB7042DF2713951E0073A62E /* Assets.xcassets */,
 				FB7042E12713951E0073A62E /* Preview Content */,
 			);
@@ -249,10 +246,9 @@
 				FB7042EF2714E70A0073A62E /* Quote.swift in Sources */,
 				FB704305271727F20073A62E /* Loading.swift in Sources */,
 				FB7042FF2717276C0073A62E /* CharactersScreen.swift in Sources */,
+				FB704307271862DF0073A62E /* GameOfThronesQuotesApp.swift in Sources */,
 				FB7042F72717270A0073A62E /* CharacterViewModel.swift in Sources */,
-				FB7042DE271395130073A62E /* ContentView.swift in Sources */,
 				FB7042F9271727240073A62E /* CharacterService.swift in Sources */,
-				FB7042DC271395130073A62E /* GameOfThronesQuotesApp.swift in Sources */,
 				FB7042ED2714E6880073A62E /* APIConestants.swift in Sources */,
 				FB7042FD271727590073A62E /* CharacterView.swift in Sources */,
 			);
@@ -393,7 +389,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,7 +419,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
