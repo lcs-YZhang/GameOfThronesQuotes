@@ -22,7 +22,7 @@ final class CharacterServiceImpl: CharacterService {
         let (data, _) = try await urlSession.data(from: url!)
 
         let result = try JSONDecoder().decode(Quote.self, from: data)
-        dump(result)
+//        dump(result)
         return result
         
     }

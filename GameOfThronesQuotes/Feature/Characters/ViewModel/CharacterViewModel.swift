@@ -25,7 +25,7 @@ final class CharactersViewModelImpl: CharacterViewModel, ObservableObject {
     func getCharacters() async {
         do {
             let newQuote = try await service.fetchCharacters()
-            objectWillChange.send()
+//            objectWillChange.send()
             quote.append(newQuote)
         } catch {
             print(error)

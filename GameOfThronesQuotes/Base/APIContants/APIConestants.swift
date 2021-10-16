@@ -8,5 +8,5 @@
 import Foundation
 
 enum APIConstants {
-    static let baseUrl = "https://game-of-thrones-quotes.herokuapp.com/v1/random"
+    static let baseUrl = "https://game-of-thrones-quotes.herokuapp.com"
 }
